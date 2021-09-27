@@ -21,11 +21,11 @@ public class DefinitionsSteps {
 
 	}
 
-	@And("^Diligenciar usuario (.*)$")
-	public void loginIn(String userName) {
+	@And("^Diligenciar usuario (.*) y contraseña (.*)$")
+	public void loginIn(String userName, String password) {
 		this.loginPage = new LoginPage(driver);
-		this.loginPage.loginIn(userName);
+		this.loginPage.loginIn(userName,password);
 
 	}
-
+ 
 }
